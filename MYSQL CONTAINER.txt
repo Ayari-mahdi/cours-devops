@@ -1,0 +1,13 @@
+docker run -p 3306:3306 --name mysqlcotainer -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
+
+docker exec it IDCONTAINER /bin/bash 
+
+mysql -uroot -proot -A
+
+select user,host from mysql.user
+
+show databases;
+
+use tpachato
+
+show tables

@@ -1,0 +1,6 @@
+timedatectl set-timezone Africa/Tunis
+yum install ntp
+chkconfig ntpd on
+ntpdate pool.ntp.org
+service ntpd start
+timedatectl
